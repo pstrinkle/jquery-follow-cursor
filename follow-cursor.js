@@ -112,11 +112,8 @@
 
     /**
      * Set an element to rotate following the mouse movement.
-     * 
-     * @param configOrCommand - Config object
-     *     Example: { ... };
      */
-    $.fn.followCursor = function(configOrCommand) {
+    $.fn.followCursor = function() {
         var dataName = 'followCursor';
 
         /* 
@@ -129,7 +126,7 @@
             var initialConfig = $.extend({}, el.data());
             config = $.extend(initialConfig, {});
             config.el = el;
-            instance = new FollowCursor(config);
+            var instance = new FollowCursor(config);
 
             var position = el.offset();
             var realWidth = el.outerWidth();
