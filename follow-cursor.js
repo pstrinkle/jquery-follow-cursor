@@ -110,11 +110,6 @@
     $.fn.followCursor = function() {
         var dataName = 'followCursor';
 
-        /* 
-         * XXX: To support multiple watchers I can build an array on the 
-         * window.
-         */
-
         return this.each(function() {
             var el = $(this);
             var initialConfig = $.extend({}, el.data());
