@@ -13,8 +13,8 @@
     }
 
     FollowCursor.prototype = {
-    	middleX : 0,
-    	middleY : 0,
+        middleX : 0,
+        middleY : 0,
 
         //----------------------- protected properties and methods -------------
         /**
@@ -38,7 +38,7 @@
         },
         
         handleMove: function(event) {
-        	var newY = 0;
+            var newY = 0;
             var newX = 0;
             var middleX = this.middleX;
             var middleY = this.middleY;
@@ -140,7 +140,7 @@
             el.data(dataName, instance);
 
             $(document).mousemove(function(event) {
-            	instance.handleMove(event);
+                instance.handleMove(event);
             });
         });
     };
