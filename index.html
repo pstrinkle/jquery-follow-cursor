@@ -29,8 +29,34 @@
     <section class="main-content">
       <h3><a id="basics" class="anchor" href="#basics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Basics</h3>
       <p>More to come.</p>
-      
+      <p>Appears to not be perfect, will revisit later.</p>
+
+      <h3>Installation</h3>
+      <p>Basically just include the file.
+      <pre class="prettyprint lang-html">
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/libs/jquery-follow-cursor/follow-cursor.js"&gt;&lt;/script&gt;
+
+&lt;canvas id='eye' height="220" width="220"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+    $('#eye').followCursor();
+&lt;/script&gt;
+</pre>
+
       <canvas id='eye' height="220" width="220"></canvas>
+      
+      <br />
+      
+      <div style="text-align:right;">
+        <i id='circle' class="fa fa-circle-o-notch fa-5x" aria-hidden="true"></i>
+      </div>
+      
+      <br />
+
+      <div style="text-align:center;">
+        <i id='circle2' class="fa fa-circle-o-notch fa-5x" aria-hidden="true"></i>
+      </div>
 
 <script>
   $(function() {
@@ -63,7 +89,9 @@
 	    
 	drawArc();
 	
-	$('#eye').followCursor({});
+	$('#eye').followCursor();
+	$('#circle').followCursor();
+	$('#circle2').followCursor();
   });
 </script>
 
