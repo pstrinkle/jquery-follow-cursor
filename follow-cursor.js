@@ -42,6 +42,7 @@
             var newX = 0;
             var middleX = this.middleX;
             var middleY = this.middleY;
+            var degrees = 0;
 
             /* done together in just four quadrants. */
             if (event.pageY < middleY && event.pageX < middleX) {
@@ -50,8 +51,7 @@
               newX = middleX - event.pageX;
 
               var radians = Math.atan2(newY, newX);
-              var degrees = radians * (180 / Math.PI);
-
+              degrees = radians * (180 / Math.PI);
               degrees = 90 - degrees;
               degrees *= -1;
             } else if (event.pageY < middleY && event.pageX > middleX) {
@@ -61,8 +61,7 @@
               add = 0.25 * 360;
 
               var radians = Math.atan2(newY, newX);
-              var degrees = radians * (180 / Math.PI);
-
+              degrees = radians * (180 / Math.PI);
               degrees = 90 - degrees;
             } else if (event.pageY > middleY && event.pageX > middleX) {
               /* lower right. */
@@ -71,8 +70,7 @@
               add = 0.5 * 360;
 
               var radians = Math.atan2(newY, newX);
-              var degrees = radians * (180 / Math.PI);
-              
+              degrees = radians * (180 / Math.PI);
               degrees += 90;
             } else if (event.pageY > middleY && event.pageX < middleX) {
               /* lower left. */
@@ -81,22 +79,18 @@
               add = 0.75 * 360;
 
               var radians = Math.atan2(newY, newX);
-              var degrees = radians * (180 / Math.PI);
-
+              degrees = radians * (180 / Math.PI);
               degrees += 90;
               degrees *= -1;
             } else if (event.pageX < middleX && event.pageY == middleY) {
               /* west */
               degrees = -90;
-
             } else if (event.pageX == middleX && event.pageY > middleY) {
               /* south */              
               degrees = -180;
-
             } else if (event.pageX > middleX && event.pageY == middleY) {
               /* east */              
               degrees = 90;
-
             }
 
             var $cvs = this.el;
