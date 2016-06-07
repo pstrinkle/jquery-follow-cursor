@@ -127,9 +127,9 @@
         return this.each(function() {
             var el = $(this);
             var initialConfig = $.extend({}, el.data());
-            config = $.extend(initialConfig, config);
+            config = $.extend(initialConfig, {});
             config.el = el;
-            instance = new LevelUp(config);
+            instance = new FollowCursor(config);
 
             var position = el.offset();
             var realWidth = el.outerWidth();
