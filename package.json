@@ -1,17 +1,25 @@
 {
-    "name": "jquery-follow-cursor",
-    "version": "1.0.0",
-    "author": "Patrick Trinkle <pstrink@gmail.com>",
-    "description": "jQuery plugin that causes any element to rotate following the mouse (cursor location).",
-    "license": "Apache 2.0",
-    "keywords": [
-        "jquery",
-    ],
-    "dependencies": {},
-    "devDependencies": {},
-    "scripts": {},
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/pstrinkle/jquery-follow-cursor.git"
-    }
+  "name": "jquery-follow-cursor",
+  "version": "1.0.0",
+  "description": "jQuery plugin that causes any element to rotate following the mouse (cursor location).",
+  "main": "dist/jquery.follow-cursor.js",
+  "scripts": {},
+  "dependencies": {
+    "jquery": ">=1.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pstrinkle/jquery-follow-cursor.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "facebook"
+  ],
+  "author": "Patrick Trinkle",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pstrinkle/jquery-follow-cursor/issues"
+  },
+  "homepage": "https://pstrinkle.github.com/jquery-follow-cursor"
 }

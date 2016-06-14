@@ -1,6 +1,9 @@
 # jquery-follow-cursor
 jQuery plugin that causes any element to rotate following the mouse (cursor location)
 
+[![Latest release](https://img.shields.io/github/release/pstrinkle/jquery-follow-cursor.svg)](https://github.com/pstrinkle/jquery-follow-cursor/releases/latest)
+[![npm](https://img.shields.io/npm/v/jquery-follow-cursor.svg)](https://www.npmjs.com/package/jquery-follow-cursor)
+
 Usage
 -----
 ```html
